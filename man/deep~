@@ -1,0 +1,18 @@
+.\" Manpage for Deep
+.\" Contact Post issues at https://github.com/neophyt1983/deep/issues
+.TH man 8 "10 October 2010" "1.1" "Deep man page"
+.SH NAME
+deep \- play Deep
+.SH SYNOPSIS
+deep [options] <arguments>
+.SH DESCRIPTION
+Deep is a multiplayer procedurly generated rouge like game.
+.SH OPTIONS
+.TP
+.BR-c --connect <ip address> allows a user to connect to another game
+.BR-n --Name <player name> allows a user to set the name of their character and if it is already known get all of their stuff back. For security you should use the -p option
+.BR-p --password <player password> Gives the password for the player that is logging in. This is not required but recomended if you don't want all of your stuff taken.
+.SH BUGS
+probably lots as it doesn't even exist yet
+.SH AUTHOR
+Dale Kipple (email@address.none)

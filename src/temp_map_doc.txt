@@ -1,0 +1,11 @@
+397383500
+
+This is the surface area of a sphere rounded down to the nearest whole number
+Then sq. rooted and again rounded down to the nearest whole number.
+Finally the number is rounded to the nearest 100.
+
+This number represents the x and y axis of the initial map that is generated.
+
+Maps generated in the world after this one are represented by 12566-(level*100)
+This of course works until you get to 100 at which point you are said to be at
+the core of the world and there is nowhere else to go.

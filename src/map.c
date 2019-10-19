@@ -4,7 +4,7 @@
 
 
 // Global Variables and Definitions
-
+char The_Map[10][10][10];
 
 // Function Declaration
 

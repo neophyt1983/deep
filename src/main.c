@@ -2,11 +2,21 @@
 //***main.c***
 //**********************************************************
 
+#ifdef linux
 #include <stdio.h>
 #include <stdlib.h>
 #include <curses.h>
+#include <unistd.h>
+#endif
+
+#ifdef _WIN32
+#include <stdio.h>
+#include <stdlib.h>
+#include "PDCurses-3.9/curses.h"
+#endif
+
 //#include "tool.c"
-//#include "map.c"
+#include "map.c"
 
 int main(int argc, char *argv[])
 {
@@ -16,14 +26,20 @@ int main(int argc, char *argv[])
 		printf("Unable to enter curses mode");
 		exit(1);
 	}
-int termSX = 1;
-int termSY = 1;
-	if(is_term_resized(termSY,termSX))
-	{
-		resize_term(termSY,termSX);
-	}
+int termSX;
+int termSY;
+char kbp = 0;
 
-printw("x = %d and y = %d\n",termSX,termSY);
+noecho();
+
+while(kbp != 'q')
+{
+		getmaxyx(stdscr,termSY,termSX);
+
+		kbp = getch();
+}
+
+map_box((termSX-2),(termSY-2));
 getch();
 
 	endwin();

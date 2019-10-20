@@ -4,3 +4,6 @@ this game comes from Basch-Crawl except the language of course.
 The included man directory contains the beginnings of a man page that makes
 reference to things that do not yet exist. Also, I'm just now learning how to
 write a man page so it doesn't work correctly yet.
+
+PDCurses 3.9 has been included for later Windows compile which I am still setting up. PDCurses is in the public domaim but not everything
+in the folder is. Check the readme in the directory to make sure.
